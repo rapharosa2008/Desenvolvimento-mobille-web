@@ -1,4 +1,5 @@
 import 'dart:io';
+
 void main() {
   stdout.write("Qual a distâcia?\n");
   String? valor = stdin.readLineSync();
