@@ -1,5 +1,13 @@
-import 'package:terceiro_trabalho_parcial/terceiro_trabalho_parcial.dart' as terceiro_trabalho_parcial;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${terceiro_trabalho_parcial.calculate()}!');
+void main() {
+  print('Digite um número inteiro:');
+  int n = int.parse(stdin.readLineSync()!);
+
+  print('\nNúmero escolhido: $n');
+  print('Contagem regressiva:');
+
+  for (int i = n; i >= 0; i--) {
+    print(i);
+  }
 }
